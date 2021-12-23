@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    a{
+        text-decoration: none;
+        cursor: pointer;
+      }
+    .over{
+        display: flex;
+        justify-content: space-around;
+        background-color: #303030;
+        padding: 15px;
+        color:white
+    }
+    .over a{
+        color:#dfd9d9;
+        padding-left: 20px;
+        text-decoration: none;
+    }
+    .over a:hover{
+        color:rgb(243, 255, 137);
+    }
+    .under{
+        display: flex;
+        justify-content: space-around;
+    }
+    .under_left img{
+        width: 70%;
+        height: 70%;
+    }
+    .under_right{
+        padding: 70px;
+    }
+    .under_right a{
+        color: #303030;
+        font-size: 150%;
+        padding: 0 15px;
+        text-decoration: none;
+    }
+    
+    .under_right a:hover{
+        color: rgb(235, 241, 180);
+    }
+    header{
+        z-index: 4;
+        width: 100%;
+    }
+    #carousel{
+        margin-top: 235px;
+        width: 60%;
+        position: absolute;
+        text-align: center;
+        margin-left: 350px;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 20% 0;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .new_clubs{
+        display: grid;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #303030;
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .four{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 80px;
+    }
+    .smth{
+        height: 400px;
+        padding-left: 30px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 20px;      
+        margin-bottom: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 15px 0.1px;
+        
+    }
+    .title{
+        font-size: 14px;
+        padding-bottom: 20px;
+        padding: 0 15px;
+    }
+    .smth img{
+    margin-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .button {
+        text-decoration: none;
+        color: rgb(151, 19, 19);
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: transparent;
+        border-radius: 13px;
+        border: 3px solid rgb(245, 26, 26);
+        width: 130px;
+        margin-left: 8px;
+      }
+      .button:hover{
+          color:#303030
+      }
