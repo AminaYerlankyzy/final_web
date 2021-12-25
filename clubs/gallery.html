@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header class="header">
+        <div class="over">
+            <div class="over_left">
+                <a class="header_phone" href="tel:7 (727) 307 95 65">+7 (727) 307 95 65</a>
+                <a class="header_email" href="ssc@sdu.edu.kz">ssc@sdu.edu.kz</a>
+            </div>
+            <div class="right">
+                <a href="contact.html" class="header_contact" style="background-color: #ffc222; padding: 17px 20px; font-size: 18px; color:#303030">Contacts</a>
+            </div>
+        </div>
+        <div class="under">
+            <div class="under_left">
+                <img src="./img/sdulife1.png" alt="">
+            </div>
+            <div class="under_right">
+                <a href="index.html">HOME</a>
+                <a href="./index.html#about_clubs">ABOUT CLUBS</a>
+                <a href="newclubs.html">NEW CLUBS</a>
+                <a href="gallery.html">GALLERY</a>
+            </div>
+        </div>
+        </header>
+    
+    <div class="container-img" id="containerImgBox">
+        <img src="./img/image/1.jpg" id="containerImg" alt="">
+        <span onclick="closeContainerImg()"> X </span>
+    </div>>
+    <div class="img-photo">
+        <img src="./img/1.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/2.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/3.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/4.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/5.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/6.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/7.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/8.jpg" onclick="openContainerImg(this.src)" >
+        <img src="./img/9.jpg" onclick="openContainerImg(this.src)" >
+    </div>
+<script>
+ var containerImgBox = document.getElementById("containerImgBox");
+ var containerImg = document.getElementById("ContainerImg");
+function openСontainerImg(pic){
+    containerImgBox.style.display = "flex";
+    containerImg.src = pic;
+}
+function closeContainerImg(){
+    containerImgBox.style.display = "none";
+}
+</script>
+</body>
+</html>

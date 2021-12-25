@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    height: auto;
+}
+  
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.over{
+  display: flex;
+  justify-content: space-around;
+  background-color: #303030;
+  padding: 15px;
+  color:white
+}
+
+.over a{
+  color:#dfd9d9;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.over a:hover{
+    color:rgb(243, 255, 137);
+}
+
+.under{
+  margin-top: -0.5px;
+  margin-bottom: -75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.under_left img{
+  width: 70%;
+  height: 70%;
+}
+
+.under_right{
+  padding: 70px;
+}
+
+.under_right a{
+  color: #303030;
+  font-size: 150%;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.under_right a:hover{
+  color: rgb(235, 241, 180);
+}
+
+header{
+  width: 100%;
+}
+
+.container{
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+  
+.club{
+  width: 250px;
+  height: 350px;
+  background-color: #fffffffb;
+  box-shadow: rgba(0, 0, 0, 0.096) 0px 20px 25px -5px,rgba(0, 0, 0, 0.048) 0px 10px 10px -5px;
+  border: 1.3px rgba(0, 0, 0, 0.089) solid;
+  text-align: center;
+  margin: 50px;
+}
+  
+.club img {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+  
+.logo {
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border: 3px solid white;
+  outline: 3px solid #062a78;
+}
+  
+.buttons {
+  margin-top: 20px;
+}
+  
+.button {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 10px;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+
+
+
+  
+  .button:hover,
+  .button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgb(255, 255, 255);
+    background-color: #d90429;
+  }
+  
+  .button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+  
+  .logo {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.377) transparent transparent transparent;
+  }
+  
+  .logo:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,144 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+      
+.over{
+    display: flex;
+    justify-content: space-around;
+    background-color: #303030;
+    padding: 15px;
+    color:white
+}
+    
+.over a{
+    color:#dfd9d9;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.over a:hover{
+    color:rgb(243, 255, 137);
+}
+    
+.under{
+    display: flex;
+    justify-content: space-around;
+}
+    
+.under_left img{
+    width: 70%;
+    height: 70%;
+}
+    
+.under_right{
+    padding: 70px;
+}
+    
+.under_right a{
+    color: #303030;
+    font-size: 150%;
+    padding: 0 15px;
+    text-decoration: none;
+}
+    
+.under_right a:hover{
+    color: rgb(235, 241, 180);
+}
+    
+header{
+    width: 100%;
+}
+
+.p-heading{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgb(141, 134, 148);
+}
+
+.p-heading h3{
+    margin: auto;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 1, 36);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.p-heading h3:after{
+    content:"";
+    width: 300px;
+    height: 5px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+} 
+
+.p-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.p-box{
+    display: flex;
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 30px;
+}
+
+.p-box img{
+    height: 180px;  
+}
+
+.pop{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(35, 37, 37);
+}
+
+.p-box:hover{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgb(170, 98, 221);
+}
+ 
+.see-btn{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: linear-gradient(120deg,#6b60ec 20%,#a166f4 );
+    display: none;
+    animation: fade 0.2s;
+}
+
+.p-box:hover .see-btn{
+    display: flex;
+}
+
